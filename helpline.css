@@ -1,0 +1,274 @@
+body {
+    background: rgb(56,77,217);
+    font-family: 'Montserrat', sans-serif;
+}
+.helps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header header"
+      "main main"
+      "helpline helpline";
+  }
+  .header { grid-area: header; }
+
+  .main { grid-area: main; }
+
+  .helpline { grid-area: helpline; }
+  /* -------------- MENU CSS STUFF :~) ----------------- */
+
+  .ham {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 90%;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  
+  .ham a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 500;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .ham a:hover {
+    color: #605df7;
+  }
+  
+  .ham .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  /*------*/
+
+.hams {
+    display: inline-block;
+  }
+  
+  .menu:first-of-type {
+    width:80px;
+    height: 10px;
+    border-radius: 25px;
+    margin: 20px 15px;
+    background: white;
+    transition: all 1s ease-in-out;
+  
+  }
+  .menu {
+    width:40px;
+    height: 10px;
+    border-radius: 25px;
+    margin: -5px 15px;
+    background: white;
+    transition: all 1s ease-in-out;
+  
+  }
+  .menu:hover:first-of-type {
+    transform: rotate(180deg);
+  }
+  
+/*------*/
+#need {
+    color: aliceblue;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 700;
+    padding: -5px 0px;
+
+}
+
+button:nth-child(2){
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    position: absolute;
+    top: 300px;
+    left: 75%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.40);
+    border-color: rgba(245, 245, 245, 0.4);
+    width: 700px;
+    height: 200px;
+    padding: 20px 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: aliceblue;
+    border-radius: 10px;
+}
+button:nth-child(3){
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    position: absolute;
+    top: 300px;
+    left: 25%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.40);
+    border-color: rgba(245, 245, 245, 0.4);
+    width: 700px;
+    height: 200px;
+    padding: 20px 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: aliceblue;
+    border-radius: 10px;
+}
+button:nth-child(4){
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    position: absolute;
+    top: 700px;
+    left: 75%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.40);
+    border-color: rgba(245, 245, 245, 0.4);
+    padding: 30px 120px;
+    font-size: 24px;
+    font-weight: 600;
+    color: aliceblue;
+    border-radius: 10px;
+}
+button:nth-child(5){
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    position: absolute;
+    top: 700px;
+    left: 25%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.40);
+    border-color: rgba(245, 245, 245, 0.4);
+    padding: 30px 120px;
+    font-size: 24px;
+    font-weight: 600;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+button:hover {
+    opacity: 0.4;
+}
+
+/*------*/
+
+.linker{
+    width: 100px;
+    height: 50px;
+    margin: 0;
+    position: absolute;
+    top: 70px;
+    left: 60px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: tomato;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+/*------*/
+
+@media screen and (max-width:800px){
+    #need{
+        font-size: 50px;
+        position: absolute;
+        padding: 0px;
+    }
+    button:nth-child(2) {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        position: absolute;
+        top: 250px;
+        left: 200px;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255);
+        border-color: rgba(245, 245, 245, 0.4);
+        width: 300px;
+        height: 150px;
+        padding: 0px 10px;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(56,77,217);
+        border-radius: 10px;
+    }
+    button:nth-child(3) {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        position: absolute;
+        top: 420px;
+        left: 200px;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255);
+        border-color: rgba(245, 245, 245, 0.4);
+        width: 300px;
+        height: 150px;
+        padding: 10px 5px;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(56,77,217);
+        border-radius: 10px;
+    }
+
+    button:nth-child(4) {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        position: absolute;
+        top: 600px;
+        left: 100px;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255);
+        border-color: rgba(245, 245, 245, 0.4);
+        font-size: xx-small;
+        width: 180px;
+        height: 150px;
+        padding: 0px 5px;
+        font-size: 15px;
+        font-weight: 600;
+        color: rgb(56,77,217);
+        border-radius: 10px;
+    }
+    button:nth-child(5) {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        position: absolute;
+        top: 600px;
+        left: 310px;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255);
+        border-color: rgba(245, 245, 245, 0.4);
+        font-size: xx-small;
+        width: 180px;
+        height: 150px;
+        padding: 0px 5px;
+        font-size: 15px;
+        font-weight: 600;
+        color: rgb(56,77,217);
+        border-radius: 10px;
+    }
+    
+    .ham a{
+        font-size: 25px;
+      }
+      
+
+  }
