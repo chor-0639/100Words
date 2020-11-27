@@ -1,88 +1,136 @@
-body{
-  background-color: #F6FDFF;
-  font-family: 'Montserrat', sans-serif;
-  color: #101E7E
+*{
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     font-size: 100%;
+     font-family: 'Montserrat', sans-serif;
+     
+
+ }
+ div, section, span, ul, li, a, header {
+     box-sizing: border-box;
+ }
+
+ header{
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     padding: 20px 50px;
+     align-items: center;
+ }
+ #testy li{
+     list-style: none;
+     display: inline-block;
+     margin: 20px;
+ }
+ #testy li a{
+     color: #101E7E;
+     text-decoration: none;
+     font-size: 20px;
+ }
+ #testy li a:hover{
+    color: lightblue;
+    transition:all 0.3s ease-in-out;;
+}
+ section{
+     width: 100%;
+     float: left;
+     height: 100vh;
+ }
+ #home{
+    background-color: #F6FDFF;
+ }
+
+#Mission{
+    background-color:#101E7E ;
+    }
+
+#News{
+    background-color: #F6FDFF;
 }
 
-div.menu:first-of-type {
-  width:70px;
-  height: 10px;
-  margin: 5px 5px;
-  border-radius: 25px;
-  background: #101E7E;
-  position: relative;
-}
-div.menu {
-  width:40px;
-  height: 10px;
-  border-radius: 25px;
-  margin: 5px 5px;
-  background: #101E7E;
-  position: relative;
-}
+    /*------*/
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1.5fr 1.5fr;
-  grid-template-rows: 50px 2fr 2fr 1.5fr 150px;
-  gap: 10px 10px;
-  grid-template-areas:
-    "header header"
-    "main main"
-    "mission mission"
-    "news events"
-    "footer footer";
-}
+    .hams {
+        display: inline-block;
+      }
+      
+      .menu:first-of-type {
+        width:80px;
+        height: 10px;
+        border-radius: 25px;
+        margin: 20px 15px;
+        background: #101E7E;
+        transition: all 1s ease-in-out;
+      
+      }
+      .menu {
+        width:40px;
+        height: 10px;
+        border-radius: 25px;
+        margin: -5px 15px;
+        background: #101E7E;
+        transition: all 1s ease-in-out;
+      
+      }
+      .menu:hover:first-of-type {
+        transform: rotate(180deg);
+      }
 
-.header { 
-  grid-area: header; 
+      /*------*/
+
+      .linker{
+        width: 100px;
+        height: 50px;
+        margin: 0;
+        position: absolute;
+        top: 70px;
+        left: 60px;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background-color: tomato;
+        opacity: 0;
+        cursor: pointer;
+      }
+        /*------*/
+ 
+ /* -------------- MENU CSS STUFF :~) ----------------- */
+
+ .ham {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 90%;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
   }
-
-.main { 
-  grid-area: main; 
-  padding: 10%;
-  text-align: center;
+  
+  .ham a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 500;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
   }
-#title{
-  font-family: 'Montserrat', sans-serif;
-  color: #101E7E;
-  font-size: 150px;
-}
-
-.mission { 
-  grid-area: mission; 
-  padding: 20%;
-  text-align: center;
+  
+  .ham a:hover {
+    color: #605df7;
   }
-
-.news { 
-  grid-area: news; 
+  
+  .ham .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
   }
-
-.events { 
-  grid-area: events; 
-  }
-
-.footer { 
-  grid-area: footer;
-  background-color: navy;
-  text-align: center;
-  padding: 60px; 
-  }
-#link {
-  text-decoration: none;
-  color: white;
-  margin:240px;
-}
-
-
-.grid-container * {
-  border: 1px solid red;
-  position: relative;
-}
-
-.grid-container *:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+/*---------*/
