@@ -1,4 +1,4 @@
-*{
+ *{
      margin: 0;
      padding: 0;
  }
@@ -47,9 +47,191 @@
     background-color:#101E7E ;
     }
 
-#News{
+
+/*---------*/
+h1:first-of-type{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 200px;
+    color: #101E7E;
+    font-weight: normal;
+}
+h2:first-of-type{
+    text-align: center;
+    color: #101E7E;
+    font-weight: lighter;
+}
+/*---------*/
+#Mission h1{
+    font-size: 100px;
+    color: white;
+    margin-top: 17%;
+}
+#Mission p{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+    padding: 15px 15%;
+}
+/*---news and events stuff--*/
+#news{
     background-color: #F6FDFF;
 }
+
+#news .leftBox .content h1{
+    margin:0;
+    padding: 0;
+    font-size: 45px;
+    color: white;
+}
+#news .leftBox .content p{
+    margin:10px 0 0;
+    padding: 0;
+    color: white;
+}
+
+#news .leftBox{
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+}
+#news .leftBox .content{
+    color: white;
+    background: #3c4aa1;
+    padding:40px;
+    transition: .5s;
+
+}
+#news .event{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #101E7E;
+    float: right;
+    box-sizing: border-box;
+}
+#news .event ul{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+}
+#news .event ul li{
+    list-style: none;
+    background: #F6FDFF;
+    box-sizing: border-box;
+    height: 200px;
+    margin: 15px 0;
+}
+#news .event ul li .time{
+    position: relative;
+    padding: 20px;
+    background-image: url("gol.jpg"); /*--Photo by Courtney Cook on Unsplash--*/
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    transition: .5s;
+}
+#news .event ul li:hover .time{
+     background: #3c4aa1;
+}
+#news .event ul li .time h2{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 60px;
+    line-height: 30px;
+}
+#news .event ul li .time h2 span{
+    font-size: 30px;
+}
+#news .event ul li .details{
+    padding: 20px;
+    background: white;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+#news .event ul li .details h3{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+#news .event ul li .details p{
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 15px;
+}
+#news .event ul li .details a{
+    display:inline-block ;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: 2px solid darkblue;
+    margin-top: 15px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.iframe{
+  align-content: center
+}
+
+/*-----*/
+.footer{
+    background-color: #101E7E;
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding-top: 100px;
+    padding: 100px;
+}
+
+
+.fa {
+    padding: 20px 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    
+  }
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+.fa-instagram {
+    background: #125688;
+    color: white;
+  }
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+
+  
 
     /*------*/
 
@@ -133,4 +315,4 @@
     font-size: 36px;
     margin-left: 50px;
   }
-/*---------*/
+
